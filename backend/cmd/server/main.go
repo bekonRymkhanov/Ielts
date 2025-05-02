@@ -118,7 +118,7 @@ func migrationUp(db *sql.DB) {
 	}
 
 	m, err := migrate.NewWithDatabaseInstance(
-		"file://../../migrations",
+		"file:///usr/src/app/backend/migrations",
 		"postgres", driver)
 	if err != nil {
 		log.Fatal(err)

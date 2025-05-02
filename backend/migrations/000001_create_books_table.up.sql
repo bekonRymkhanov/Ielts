@@ -11,3 +11,5 @@ CREATE TABLE IF NOT EXISTS books (
     url TEXT,
     version BIGINT
 );
+
+CREATE EXTENSION IF NOT EXISTS citext;
